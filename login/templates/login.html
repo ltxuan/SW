@@ -1,56 +1,71 @@
-<!doctype html>
+{% load static %}
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">span.iconify, i.iconify, iconify-icon {display: inline-block; width: 1em; }
+  </style>
     <title>LOGIN</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min(1).css' %}"/>
+    <script src="{%static 'js/iconify.min.js.download' %}"></script>
+    <script type="module" src="{%static 'js/index.js.download' %}"></script>
+    <script nomodule="" src="{%static 'js/index.mjs' %}"></script>
+    <script nomodule="" src="{%static 'js/index.d.ts' %}"></script>
+    <script src="{%static 'js/jquery-3.6.0.js.download' %}"></script>
+    <script src="{%static 'js/jquery-2.2.4.js.download' %}"></script>
+    <script src="{%static 'js/jquery-latest.js.download' %}"></script>
+    <link rel="stylesheet" href="{%static 'all.css' %}">
+    <link rel="stylesheet" href="{%static 'css/login.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="{%static 'js/login.js.download' %}"></script>
 </head>
-
 <body>
-    <div class="mx-auto" style="width: 500px" ;>
-        <form action="login" method="post" class="form-horizontal">
-            {% csrf_token%}
-            <div class="col-xs-8 col-xs-offset-4">
-                <h2 style="text-align:center;">LOGIN</h2>
-            </div>
-
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" name="username" id="username" placeholder="Enter Username">
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" name="password" id="password" placeholder="Enter Password">
-            </div>
-            <button type="submit" class="btn btn-primary">LOGIN</button>
-            <br />
-            <div class="form-group">
-                {% for message in messages %}
-                <div class="alert alert-danger" role="alert">
-                    {{message}}
+        <div id="Login" class="container-fluid">
+            <div class="row row1"></div>
+            <div class="row loginContent">
+                <div class="col-4">
+                    <img src="{%static 'images/logo_admin.png' %}">
                 </div>
-                {% endfor %}
+                <div class="col-1"></div>
+                <div class="col-6">
+                    <div class="layer1">
+                        <div class="layer11"></div>
+                        <div class="layer12"><i class="fa fa-user"></i></div>
+                        <div class="layer13"></div>
+                    </div>
+                    <div class="layer2">
+                        <form class="form_login" action="/login" method="POST">
+                            {% csrf_token%}
+                            <div class="title"> <span>SWL3</span><span> Configuration Panel</span></div>
+                            <div class="username">
+                                <label for="username">User Name</label>
+                                <i class="iconUsername fa fa-user"></i>
+                                <input type="text" id="username" placeholder="Enter User Name" name="username">
+                            </div>
+                            <div class="password">
+                            <label for="password">Password</label>
+                                <i class="iconPassword fa fa-lock"></i>
+                                <i class="iconEye fa fa-eye"></i>
+                                <input type="password" id="password"  placeholder="Enter Password" name="password">
+                            </div>
+                            {% for message in messages %}
+                            <div style = "color: rgb(255, 0, 0)">
+                                {{message}}
+                            </div>
+                            {% endfor %}
+                            <div class="btn_login">
+                                <button type="submit" id = "Submit" class="btn btn-primar">Login</button>
+                                <button class="btn btn-primary" type="button" onclick="" hidden>Reset</button>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="layer3"><i class="fas fa-sort-down"></i></div>
+                </div>
             </div>
-        </form>
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+            <div class="row row1"></div>
+        </div>
 </body>
-
 </html>

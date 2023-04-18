@@ -29,6 +29,7 @@ def register(request):
     else:
         return render(request, "registration.html")
 
+
 def login_user(request):
     if request.method == "POST":
         username = request.POST["username"]
@@ -38,13 +39,14 @@ def login_user(request):
 
         if user is not None:
             auth.login(request, user)
-            return redirect("home")
+            return redirect("pbx")
         else:
             messages.info(request, "Invalid Username or Password")
             return redirect("login")
     else:
         return render(request, "login.html")
-       
+
+
 def logout_user(request):
     auth.logout(request)
-    return redirect('home')
+    return redirect("home")

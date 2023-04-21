@@ -12,9 +12,9 @@
         }
     </style>
     <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{%static 'css/bootstrap.min' %}">
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{%static 'css/bootstrap.min(1).css' %}">
     <script src="{%static 'js/iconify.min.js.download' %}"></script>
     <script type="module" src="{%static 'js/index.js.download' %}"></script>
@@ -38,51 +38,26 @@
     <link rel="stylesheet" href="{%static 'css/custom.css' %}">
     <script src="{%static 'js/form_edit_FXS.js.download' %}"></script>
     <script src="{%static 'js/sip_configure.js' %}"></script>
-
     <script src="{%static 'js/PBX.js.download' %}"></script>
     <script src="{%static 'js/Trunks.js.download' %}"></script>
-
     <script src="{%static 'js/net_work.js' %}"></script>
-
     <script src="{%static 'js/quagga.js' %}"></script>
-
     <script src="{%static 'js/SYSTEM.js.download' %}"></script>
-
     <script src="{%static 'js/dial_plan.js' %}"></script>
-
     <script src="{%static 'js/call_forward.js' %}"></script>
-
     <script src="{%static 'js/audio_setting.js' %}"></script>
-
     <script src="{%static 'js/account.js' %}"></script>
-
     <script src="{%static 'js/sip_setting.js' %}"></script>
-
     <script src="{%static 'js/nat_setting.js' %}"></script>
-
     <script src="{%static 'js/qos_setting.js' %}"></script>
-
     <script src="{%static 'js/t38_setting.js' %}"></script>
-
     <script src="{%static 'js/codec_setting.js' %}"></script>
-
     <script src="{%static 'js/advanced_setting.js' %}"></script>
-
     <script src="{%static 'js/make_certificate.js' %}"></script>
-
     <script src="{%static 'js/infor.js' %}"></script>
-
-    <script src="{%static 'js/backup.js' %}"></script>
-
-    <script src="{%static 'js/co_trunk.js' %}"></script>
-
-    <script src="{%static 'js/snmp.js' %}"></script>
-
-    <script src="{%static 'js/radio.js' %}"></script>
-
+    <script src="{%static 'js/backup.js' %}"></script> 
     <title>PBX</title>
 </head>
-
 <body>
     <div class="container" style="overflow-x: hidden!important;min-width: 1200px;">
         <div class="row toolbar">
@@ -90,7 +65,7 @@
                 <div class="text-title">
                     <span>BINH CHỦNG THÔNG TIN LIÊN LẠC</span>
                     <span><b>TRUNG TÂM KỸ THUẬT THÔNG TIN CÔNG NGHỆ CAO</b></span>
-                    <span class="HTC-ISR">HTC-ACEIP</span>
+                    <span class="HTC-ISR">HTC-ISR2017</span>
                 </div>
             </div>
             <div class="toolbar-item">
@@ -176,15 +151,16 @@
                                 </button>
                             </li>
                             <li>
-                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event, 'Date &amp; Time')">Date &
-                                    Time</button>
+                                <button class="tab_links_FXS_VoIP"
+                                    onclick="PBX_child1(event, &#39;Date &amp; Time&#39;)">Date & Time</button>
                             </li>
                             <li>
-                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event,'Add_User')">Add
+                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event,&#39;Add_User&#39;)">Add
                                     User</button>
                             </li>
                             <li>
-                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event,'Change_Password')">Change
+                                <button class="tab_links_FXS_VoIP"
+                                    onclick="PBX_child1(event,&#39;Change_Password&#39;)">Change
                                     Password
                                 </button>
                             </li>
@@ -196,11 +172,6 @@
                             <li>
                                 <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event,'Backup_and_Restore')">
                                     Backup and Restore
-                                </button>
-                            </li>
-                            <li>
-                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event,'SNMP_CONFIG')">
-                                    SNMP Config
                                 </button>
                             </li>
                         </ul>
@@ -215,23 +186,23 @@
                         <ul>
                             <li>
                                 <button class="tab_links_FXS_VoIP"
-                                    onclick="PBX_child1(event,'GE1_Setting')">GE1</button>
+                                    onclick="PBX_child1(event,&#39;GE1_Setting&#39;)">GE1</button>
                             </li>
                             <li>
                                 <button class="tab_links_FXS_VoIP"
-                                    onclick="PBX_child1(event,'GE2_Setting')">GE2</button>
+                                    onclick="PBX_child1(event,&#39;GE2_Setting&#39;)">GE2</button>
                             </li>
                             <li>
                                 <button class="tab_links_FXS_VoIP"
-                                    onclick="PBX_child1(event,'GE3_Setting')">GE3</button>
+                                    onclick="PBX_child1(event,&#39;GE3_Setting&#39;)">GE3</button>
                             </li>
                             <li>
                                 <button class="tab_links_FXS_VoIP"
-                                    onclick="PBX_child1(event,'GE4_Setting')">GE4</button>
+                                    onclick="PBX_child1(event,&#39;GE4_Setting&#39;)">GE4</button>
                             </li>
                             <li>
-                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event,'LoopBackSetting')">Loop
-                                    back setting</button>
+                                <button class="tab_links_FXS_VoIP"
+                                    onclick="PBX_child1(event,&#39;LoopBackSetting&#39;)">Loop back setting</button>
                             </li>
                         </ul>
                     </div>
@@ -239,13 +210,13 @@
                 <div class="contentBox">
                     <div class="accordion-item" onclick="">
                         <i class="icon-arrow fas fa-caret-square-right"></i>
-                        <span>SIP</span>
+                        <span>ATA</span>
                     </div>
                     <div class="accordion-body">
                         <ul>
                             <li>
-                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event, 'FXS_CONFIGURE')">SIP
-                                    CONFIGURE</button>
+                                <button class="tab_links_FXS_VoIP"
+                                    onclick="PBX_child1(event, &#39;ATA_CONFIGURE&#39;)">ATA CONFIGURE</button>
                             </li>
                             <li>
                                 <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event, 'Audio_Set')">Audio
@@ -259,76 +230,13 @@
                 <div class="contentBox">
                     <div class="accordion-item" onclick="">
                         <i class="icon-arrow fas fa-caret-square-right"></i>
-                        <span>RADIO</span>
-                    </div>
-                    <div class="accordion-body">
-                        <ul>
-                            <!-- <li>
-                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event, 'RADIO_ID')">RADIO
-                                    ACCOUNT</button>
-                            </li> -->
-                            <li>
-                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event, 'PORT_1_CONFIG')">
-                                    PORT1
-                                </button>
-                            </li>
-                            <li>
-                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event, 'PORT_2_CONFIG')">
-                                    PORT2
-                                </button>
-                            </li>
-                               <li>
-                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event, 'PORT_3_CONFIG')">
-                                    PORT3
-                                </button>
-                            </li>
-                            <li>
-                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event, 'PORT_4_CONFIG')">
-                                    PORT4
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="contentBox">
-                    <div class="accordion-item" onclick="">
-                        <i class="icon-arrow fas fa-caret-square-right"></i>
-                        <span>CO TRUNK</span>
-                    </div>
-                    <div class="accordion-body">
-                        <ul>
-                            <li>
-                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event, 'CO_CONFIGURE')">CO CONFIGURE
-                                    </button>
-                            </li>
-                          
-                        </ul>
-                    </div>
-                </div>
-                <!-- <div class="contentBox">
-                    <div class="accordion-item" onclick="">
-                        <i class="icon-arrow fas fa-caret-square-right"></i>
-                        <span>L2 SWITCH</span>
-                    </div>
-                    <div class="accordion-body">
-                        <ul>
-                            <li>
-                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event, 'L2_SWITCH_CONFIGURE')">L2 SWITCH CONFIGURE
-                                </button>
-                            </li>
-                
-                        </ul>
-                    </div>
-                </div> -->
-                <div class="contentBox">
-                    <div class="accordion-item" onclick="">
-                        <i class="icon-arrow fas fa-caret-square-right"></i>
                         <span>IP PBX </span>
                     </div>
                     <div class="accordion-body" style="overflow: hidden;">
                         <ul>
                             <li>
-                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event, 'FXS_VoIP_Extensions')">
+                                <button class="tab_links_FXS_VoIP"
+                                    onclick="PBX_child1(event, &#39;FXS_VoIP_Extensions&#39;)">
                                     FXS/VoIP Extensions
                                 </button>
                             </li>
@@ -342,7 +250,7 @@
                                 </button>
                             </li>
                             <li>
-                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event, 'VoIP_Trunk')"
+                                <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event, &#39;VoIP_Trunk&#39;)"
                                     class=" active">VoIP Trunk</button>
                             </li>
                             <li>
@@ -362,11 +270,11 @@
                         <ul>
                             <li>
                                 <button class="tab_links_FXS_VoIP"
-                                    onclick="PBX_child1(event,'Configuration_OSPF')">Configuration_OSPF</button>
+                                    onclick="PBX_child1(event,&#39;Configuration_OSPF&#39;)">Configuration_OSPF</button>
                             </li>
                             <li>
                                 <button class="tab_links_FXS_VoIP"
-                                    onclick="PBX_child1(event,'Configuration_RIP')">Configuration_RIP</button>
+                                    onclick="PBX_child1(event,&#39;Configuration_RIP&#39;)">Configuration_RIP</button>
                             </li>
                         </ul>
                     </div>
@@ -374,8 +282,7 @@
 
             </div>
 
-            <div class="col-10 right-content">
-                <!-- noi dung se duoc display:none or hide-->
+            <div class="col-10 right-content"> <!-- noi dung se duoc display:none or hide-->
                 <div class="row toolbar-content">
                     <div class="col-4 tabTool">
                         <span class="title-tabTool" id="title-tabTool-PBX">VoIP_Trunk</span>
@@ -396,7 +303,7 @@
                         <table id="table-FXS_VoIP_Extensions">
                             <thead>
                                 <tr>
-                                    <th style="width: 5%">STT</th>
+                                    <th style="width: 5%">Port</th>
                                     <th style="width: 18%">Extension</th>
                                     <th style="width: 18%">Name</th>
                                     <th style="width: 18%">Call ID</th>
@@ -438,8 +345,7 @@
                         <div class="container-fluid"
                             style="overflow-y:hidden!important;width: 96%;margin-left: 2%!important;">
 
-                            <div class="form-group" style="display: none">
-                                <!--		Show Numbers Of Rows 		-->
+                            <div class="form-group" style="display: none"> <!--		Show Numbers Of Rows 		-->
                                 <select class="form-control" name="state" id="maxRowstable-id-VoIP">
                                     <option value="5000">Show ALL Rows</option>
                                     <option value="2">2</option>
@@ -867,8 +773,7 @@
                         </div>
 
                         <div class="container-fluid" id="table_mother_VoIP_Trunk" style="overflow-y:hidden!important">
-                            <div class="form-group" style="display: none">
-                                <!--		Show Numbers Of Rows 		-->
+                            <div class="form-group" style="display: none"> <!--		Show Numbers Of Rows 		-->
                                 <select class="form-control" name="state" id="maxRowstable-VoIP_Trunk">
                                     <option value="5000">Show ALL Rows</option>
                                     <option value="5">5</option>
@@ -1549,15 +1454,12 @@
                     </div>
                 </div>
                 <!-- ATA cofigure -->
-                <div class="row tab_content_FXS_VoIP" id="FXS_CONFIGURE">
+                <div class="row tab_content_FXS_VoIP" id="ATA_CONFIGURE">
                     <div class="form-content Configuration">
                         <div class="container_PJSIP_CONFIGURE" id="container_PJSIP_CONFIGURE"
                             style="width: 96%;margin-left: 2%!important">
                             <div class="row">
                                 <div class="col-lg-12">
-
-                                    <div style="color: black; font-weight: bold; font-size: 20px" class="text-title">FXS</div>
-                                    <div style="background-color: rgb(105, 188, 233); width: 100%; height: 2px;" class="line-seperate"></div>
 
                                     <div class="row">
                                         <div class="form-group col-3" style="padding:15px!important">
@@ -1969,7 +1871,7 @@
                                         </div>
                                     </div>
 
-                                    <!-- <div class="row">
+                                    <div class="row">
                                         <div class="form-group col-3">
                                             <label for="sipaccount1">Sip Account 8:</label>
                                             <input type="checkbox" onchange="onchange_func(this)"
@@ -2173,9 +2075,9 @@
                                             <input type="text" oninput="sip_conf_change(this)" class="form-control"
                                                 name="Hotline11" value="12">
                                         </div>
-                                    </div> -->
+                                    </div>
 
-                                    <!-- <div class="row">
+                                    <div class="row">
                                         <div class="form-group col-3">
                                             <label for="sipaccount1">Sip Account 12:</label>
                                             <input type="checkbox" onchange="onchange_func(this)"
@@ -2225,9 +2127,9 @@
                                             <input type="text" oninput="sip_conf_change(this)" class="form-control"
                                                 name="Hotline12" value="13">
                                         </div>
-                                    </div> -->
+                                    </div>
 
-                                    <!-- <div class="row">
+                                    <div class="row">
                                         <div class="form-group col-3">
                                             <label for="sipaccount1">Sip Account 13:</label>
                                             <input type="checkbox" onchange="onchange_func(this)"
@@ -2797,176 +2699,7 @@
                                             <input type="text" oninput="sip_conf_change(this)" class="form-control"
                                                 name="Hotline23" value="24">
                                         </div>
-                                    </div> -->
-                                    
-                                    
-
-                                    <div style="color: black; font-weight: bold; font-size: 20px" class="text-title">RADIO</div>
-                                    <div style="background-color: rgb(105, 188, 233); width: 100%; height: 2px;" class="line-seperate"></div>
-                                    
-                                    <div class="row">
-                                        <div class="form-group col-3" style="padding:15px!important">
-                                            <label for="sipaccount1">Sip Account 8:</label>
-                                            <input type="checkbox" onchange="onchange_func(this)" name="sipaccountenable8" id="sipaccountenable8">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="sipaccount8" id="sipaccount8"
-                                                value="sip:996895@192.168.1.86:5060">
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">CallerID</b>
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">Password</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="user8" id="user8" value="996895">
-                                            <div class="input-group" id="show_hide_password">
-                                                <input id="password-field8" type="password" oninput="sip_conf_change(this)" class="form-control"
-                                                    name="pass8" value="Pin996895">
-                                                <div id="input-group-addon" class="input-group-addon">
-                                                    <a><i class="fa fa-eye-slash" aria-hidden="true" onclick="show_pass(this)"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">Transport</b>
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">Port</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <select oninput="sip_conf_change(this)" class="form-control" name="tran8">
-                                                <option value="UDP">UPD</option>
-                                                <option value="TCP">TCP</option>
-                                                <option value="TLS">TLS</option>
-                                            </select>
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="port8" id="port8" value="5060">
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <label for="Hotline1">Hotline</label>
-                                            <input type="checkbox" onchange="onchange_func(this)" name="Hlenable8" id="Hlineenable8">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="Hotline8" value="996895">
-                                        </div>
                                     </div>
-                                    
-                                    <div class="row">
-                                        <div class="form-group col-3">
-                                            <label for="sipaccount0">Sip Account 9:</label>
-                                            <input type="checkbox" onchange="onchange_func(this)" name="sipaccountenable9" id="sipaccountenable9">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="sipaccount9" id="sipaccount9"
-                                                value="sip:996891@192.168.1.86:5060">
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">CallerID</b>
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">Password</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="user9" id="user9" value="996891">
-                                            <div class="input-group" id="show_hide_password">
-                                                <input id="password-field9" type="password" oninput="sip_conf_change(this)" class="form-control"
-                                                    name="pass9" value="Pin996891">
-                                                <div class="input-group-addon">
-                                                    <a><i class="fa fa-eye-slash" aria-hidden="true" onclick="show_pass(this)"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">Transport</b>
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">Port</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <select oninput="sip_conf_change(this)" class="form-control" name="tran9">
-                                                <option value="UDP">UPD</option>
-                                                <option value="TCP">TCP</option>
-                                                <option value="TLS">TLS</option>
-                                            </select>
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="port9" id="port9" value="5060">
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <label for="Hotline1">Hotline</label>
-                                            <input type="checkbox" onchange="onchange_func(this)" name="Hlenable9" id="Hlineenable9">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="Hotline9" value="996895">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="row">
-                                        <div class="form-group col-3">
-                                            <label for="sipaccount1">Sip Account 10:</label>
-                                            <input type="checkbox" onchange="onchange_func(this)" name="sipaccountenable10" id="sipaccountenable10">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="sipaccount10" id="sipaccount10"
-                                                value="sip:958250@86.6.8.254:5060">
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">CallerID</b>
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">Password</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="user10" id="user10" value="95825">
-                                            <div class="input-group" id="show_hide_password">
-                                                <input id="password-field10" type="password" oninput="sip_conf_change(this)" class="form-control"
-                                                    name="pass10" value="95825">
-                                                <div class="input-group-addon">
-                                                    <a><i class="fa fa-eye-slash" aria-hidden="true" onclick="show_pass(this)"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">Transport</b>
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">Port</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <select oninput="sip_conf_change(this)" class="form-control" name="tran10">
-                                                <option value="UDP">UPD</option>
-                                                <option value="TCP">TCP</option>
-                                                <option value="TLS">TLS</option>
-                                            </select>
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="port10" id="port10" value="5060">
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <label for="Hotline1">Hotline</label>
-                                            <input type="checkbox" onchange="onchange_func(this)" name="Hlenable10" id="Hlineenable10">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="Hotline10" value="996895">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="row">
-                                        <div class="form-group col-3">
-                                            <label for="sipaccount1">Sip Account 11:</label>
-                                            <input type="checkbox" onchange="onchange_func(this)" name="sipaccountenable11" id="sipaccountenable11">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="sipaccount11" id="sipaccount11"
-                                                value="sip:958250@86.5.8.254:5060">
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">CallerID</b>
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">Password</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="user11" id="user11" value="958250">
-                                            <div class="input-group" id="show_hide_password">
-                                                <input id="password-field11" type="password" oninput="sip_conf_change(this)" class="form-control"
-                                                    name="pass11" value="958250">
-                                                <div class="input-group-addon">
-                                                    <a><i class="fa fa-eye-slash" aria-hidden="true" onclick="show_pass(this)"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">Transport</b>
-                                            <b class="form-control form-control-plaintext" style="border-color:#efefef">Port</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <select oninput="sip_conf_change(this)" class="form-control" name="tran11">
-                                                <option value="UDP">UPD</option>
-                                                <option value="TCP">TCP</option>
-                                                <option value="TLS">TLS</option>
-                                            </select>
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="port11" id="port11" value="5060">
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <label for="Hotline1">Hotline</label>
-                                            <input type="checkbox" onchange="onchange_func(this)" name="Hlenable11" id="Hlineenable11">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control" name="Hotline11" value="996895">
-                                        </div>
-                                    </div>
-                                    
-                            
-                             
-                                    
                                     <div class="row">
                                         <div class="background-run">
                                             <button type="button" id="button_Submit"
@@ -2987,7 +2720,7 @@
                     </div>
                 </div>
                 <!-- ATA STATUS -->
-                <div class="row tab_content_FXS_VoIP">
+                <div class="row tab_content_FXS_VoIP" id="ATA_STATUS">
                     <div class="form-content">
                         <div class="table-responsive-sm">
                             <table id="sip_status_table" class="table table-striped table-hover">
@@ -3785,8 +3518,7 @@
                                 <div class="row dateAndTime">
                                     <div class="col-4"><span></span></div>
                                     <div class="col-8"><span class="titleDate">Time</span>
-                                        <select id="hour" onchange="getSelectDate('hour')">
-                                            <!-- GIỜ -->
+                                        <select id="hour" onchange="getSelectDate(&#39;hour&#39;)"> <!-- GIỜ -->
                                             <option value="0">0</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -3813,7 +3545,7 @@
                                             <option value="23">23</option>
                                         </select>
                                         <span class="titleDate">:</span>
-                                        <select id="minute" onchange="getSelectDate('minute')">
+                                        <select id="minute" onchange="getSelectDate(&#39;minute&#39;)">
                                             <!-- PHÚT-->
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -3878,7 +3610,7 @@
                                         </select>
                                         <span class="titleDate"></span>
                                         <!-- 
-                                    <select id="AM_PM" onchange="getSelectDate('AM_PM')" onclick="submitDate()">
+                                    <select id="AM_PM" onchange="getSelectDate(&#39;AM_PM&#39;)" onclick="submitDate()">
                                         <option value="AM">AM</option>
                                         <option selected="" value="PM">PM</option>
                                     </select>-->
@@ -3890,11 +3622,11 @@
                             <div class="saveAndCancelBtn">
 
                                 <div class="saveBtn" onclick="Save_time()">
-                                    <div class="child1"><img src="./PBX_files/img tick-green.png"></div>
+                                    <div class="child1"><img src="{%static 'images/img tick-green.png' %}"></div>
                                     <div class="child2"><span>Save</span></div>
                                 </div>
                                 <div class="cancelBtn" onclick="reload_page()">
-                                    <div class="child1"><img src="./PBX_files/img close-red.png"></div>
+                                    <div class="child1"><img src="{%static 'images/img close-red.png' %}"></div>
                                     <div class="child2"><span>Cancel</span></div>
                                 </div>
 
@@ -3906,10 +3638,11 @@
                 <!--// tab add bulk extension voip-->
                 <div class="row tab_content_FXS_VoIP" id="addBulkVoIP" style="background: none">
                     <div class="form-content" style="position:relative">
-                        <div onmouseout="pos('addBulkVoIP_table')" id="addBulkVoIP_table" class="form-addVoIP_range">
+                        <div onmouseout="pos(&#39;addBulkVoIP_table&#39;)" id="addBulkVoIP_table"
+                            class="form-addVoIP_range">
                             <div class="title-content-1">
                                 <span id="add_range_extension">Add VoIP Extension Range</span><button
-                                    onclick="closeTable('addBulkVoIP')"><i class="fas fa-times"></i></button>
+                                    onclick="closeTable(&#39;addBulkVoIP&#39;)"><i class="fas fa-times"></i></button>
                             </div>
                             <div class="tabNameGeneral">General</div>
                             <div class="form2">
@@ -4045,7 +3778,7 @@
                             <div class="row toolbar1">
                                 <div class="Btn11" onclick="Save_AddBulkVoIP()"><i class="fas fa-check"
                                         style="color:green"></i><span>Save</span></div>
-                                <div class="Btn22" onclick="CancelTable('addBulkVoIP')"><i class="fas fa-times"
+                                <div class="Btn22" onclick="CancelTable(&#39;addBulkVoIP&#39;)"><i class="fas fa-times"
                                         style="color:#bd1717"></i><span>Cancel</span></div>
                             </div>
 
@@ -4058,10 +3791,10 @@
                 <!--            // tab add extension voip-->
                 <div class="row tab_content_FXS_VoIP" id="addExtensVoID" style="background: none">
                     <div class="form-content" style="position:relative">
-                        <div onmouseout="pos('addVoIP_table');" id="addVoIP_table" class="form-addVoIP_range">
+                        <div onmouseout="pos(&#39;addVoIP_table&#39;);" id="addVoIP_table" class="form-addVoIP_range">
                             <div class="title-content-1">
-                                <span id="add_voip_id">Add VoIP </span><button onclick="closeTable('addExtensVoID')"><i
-                                        class="fas fa-times"></i></button>
+                                <span id="add_voip_id">Add VoIP </span><button
+                                    onclick="closeTable(&#39;addExtensVoID&#39;)"><i class="fas fa-times"></i></button>
                             </div>
                             <div class="tabNameGeneral">General</div>
                             <div class="form2">
@@ -4197,8 +3930,8 @@
                             <div class="row toolbar1">
                                 <div class="Btn11" onclick="Save_AddVoIP()"><i class="fas fa-check"
                                         style="color:green"></i><span>Save</span></div>
-                                <div class="Btn22" onclick="CancelTable('addExtensVoID')"><i class="fas fa-times"
-                                        style="color:#bd1717"></i><span>Cancel</span></div>
+                                <div class="Btn22" onclick="CancelTable(&#39;addExtensVoID&#39;)"><i
+                                        class="fas fa-times" style="color:#bd1717"></i><span>Cancel</span></div>
                             </div>
 
                         </div>
@@ -4208,8 +3941,7 @@
                     <div class="form-content">
 
                         <div class="container-fluid" id="" style="overflow-y:hidden!important">
-                            <div class="form-group" style="display: none">
-                                <!--		Show Numbers Of Rows 		-->
+                            <div class="form-group" style="display: none"> <!--		Show Numbers Of Rows 		-->
                                 <select class="form-control" name="state"
                                     id="maxRowstable-Data_File_DownloadCertificate">
                                     <option value="5000">Show ALL Rows</option>
@@ -4523,11 +4255,11 @@
                             <div class="saveAndCancelBtn_SIP">
 
                                 <div class="saveBtn" onclick="save_general_setting()">
-                                    <div class="child1"><img src="PBX_files/img-data/img%20tick-green.png"></div>
+                                    <div class="child1"><img src="{%static 'images/img tick-green.png' %}"></div>
                                     <div class="child2"><span>Save</span></div>
                                 </div>
                                 <div class="cancelBtn" onclick="window.location.reload()">
-                                    <div class="child1"><img src="PBX_files/img-data/img%20close-red.png"></div>
+                                    <div class="child1"><img src="{%static 'images/img close-red.png' %}"></div>
                                     <div class="child2"><span>Cancel</span></div>
                                 </div>
 
@@ -4657,11 +4389,11 @@
 
                             <div class="saveAndCancel_Btn_SIP">
                                 <div class="saveBtn" onclick="nat_setting_save()">
-                                    <div class="child1"><img src="/PBX_files/img-data/img%20tick-green.png"></div>
+                                    <div class="child1"><img src="{%static 'images/img tick-green.png' %}"></div>
                                     <div class="child2"><span>Save</span></div>
                                 </div>
                                 <div class="cancelBtn" onclick="window.location.reload()">
-                                    <div class="child1"><img src="/PBX_files/img-data/img%20close-red.png"></div>
+                                    <div class="child1"><img src="{%static 'images/img close-red.png' %}"></div>
                                     <div class="child2"><span>Cancel</span></div>
                                 </div>
                             </div>
@@ -4828,11 +4560,11 @@
 
                             <div class="saveAndCancel_Btn_SIP">
                                 <div class="saveBtn" onclick="codec_setting_save()">
-                                    <div class="child1"><img src="/PBX_files/img-data/img%20tick-green.png"></div>
+                                    <div class="child1"><img src="{%static 'images/img tick-green.png' %}"></div>
                                     <div class="child2"><span>Save</span></div>
                                 </div>
                                 <div class="cancelBtn" onclick="window.location.reload()">
-                                    <div class="child1"><img src="/PBX_files/img-data/img%20close-red.png"></div>
+                                    <div class="child1"><img src="{%static 'images/img close-red.png' %}"></div>
                                     <div class="child2"><span>Cancel</span></div>
                                 </div>
                             </div>
@@ -5020,11 +4752,11 @@
 
                             <div class="saveAndCancel_Btn_SIP">
                                 <div class="saveBtn" onclick="qos_setting_save()">
-                                    <div class="child1"><img src="/PBX_files/img-data/img%20tick-green.png"></div>
+                                    <div class="child1"><img src="{%static 'images/img tick-green.png' %}"></div>
                                     <div class="child2"><span>Save</span></div>
                                 </div>
                                 <div class="cancelBtn" onclick="window.location.reload()">
-                                    <div class="child1"><img src="/PBX_files/img-data/img%20close-red.png"></div>
+                                    <div class="child1"><img src="{%static 'images/img close-red.png' %}"></div>
                                     <div class="child2"><span>Cancel</span></div>
                                 </div>
                             </div>
@@ -5077,11 +4809,11 @@
 
                             <div class="saveAndCancel_Btn_SIP">
                                 <div class="saveBtn" onclick="t38_setting_save()">
-                                    <div class="child1"><img src="/PBX_files/img-data/img%20tick-green.png"></div>
+                                    <div class="child1"><img src="{%static 'images/img tick-green.png' %}"></div>
                                     <div class="child2"><span>Save</span></div>
                                 </div>
                                 <div class="cancelBtn" onclick="window.location.reload()">
-                                    <div class="child1"><img src="/PBX_files/img-data/img%20close-red.png"></div>
+                                    <div class="child1"><img src="{%static 'images/img close-red.png' %}"></div>
                                     <div class="child2"><span>Cancel</span></div>
                                 </div>
                             </div>
@@ -5267,11 +4999,11 @@
 
                             <div class="saveAndCancel_Btn_SIP">
                                 <div class="saveBtn" onclick="advanced_setting_save()">
-                                    <div class="child1"><img src="/PBX_files/img-data/img%20tick-green.png"></div>
+                                    <div class="child1"><img src="{%static 'images/img tick-green.png' %}"></div>
                                     <div class="child2"><span>Save</span></div>
                                 </div>
                                 <div class="cancelBtn" onclick="window.location.reload()">
-                                    <div class="child1"><img src="/PBX_files/img-data/img%20close-red.png"></div>
+                                    <div class="child1"><img src="{%static 'images/img close-red.png' %}"></div>
                                     <div class="child2"><span>Cancel</span></div>
                                 </div>
                             </div>
@@ -5281,11 +5013,12 @@
                 <!--            tab edit add extension voip-->
                 <div class="row tab_content_FXS_VoIP" id="EditExtension_VoID" style="background: none">
                     <div class="form-content" style="position:relative">
-                        <div onmouseout="pos('EditExtension_VoID_table')" id="EditExtension_VoID_table"
+                        <div onmouseout="pos(&#39;EditExtension_VoID_table&#39;)" id="EditExtension_VoID_table"
                             class="form-addVoIP_range">
                             <div class="title-content-1">
                                 <span id="nameIdEitVoIP">Edit Extension VoIP - </span><button
-                                    onclick="closeTable('EditExtension_VoID')"><i class="fas fa-times"></i></button>
+                                    onclick="closeTable(&#39;EditExtension_VoID&#39;)"><i
+                                        class="fas fa-times"></i></button>
                             </div>
                             <div class="tabNameGeneral">General</div>
                             <div class="form2">
@@ -5421,8 +5154,8 @@
                             <div class="row toolbar1">
                                 <div id="Save_EditVoIP_Btn" class="Btn11" onclick=""><i class="fas fa-check"
                                         style="color:green"></i><span>Save</span></div>
-                                <div class="Btn22" onclick="CancelTable('EditExtension_VoID')"><i class="fas fa-times"
-                                        style="color:#bd1717"></i><span>Cancel</span></div>
+                                <div class="Btn22" onclick="CancelTable(&#39;EditExtension_VoID&#39;)"><i
+                                        class="fas fa-times" style="color:#bd1717"></i><span>Cancel</span></div>
                             </div>
 
                         </div>
@@ -5437,7 +5170,7 @@
                             <div class="" style="height: 160px!important;">
                                 <div class="title-content-1">
                                     <span>Delete FXS Extension <span id=""></span></span>
-                                    <button onclick="closeTable('Delete_EditExtension_FXS')"><i
+                                    <button onclick="closeTable(&#39;Delete_EditExtension_FXS&#39;)"><i
                                             class="fas fa-times"></i></button>
                                 </div>
 
@@ -5451,7 +5184,7 @@
                                         <div id="Delete_FXS_Btn" class="Btn11" onclick=""><i class="fas fa-check"
                                                 style="color:green"></i><span>Yes</span>
                                         </div>
-                                        <div class="Btn22" onclick="CancelTable('Delete_EditExtension_FXS')"><i
+                                        <div class="Btn22" onclick="CancelTable(&#39;Delete_EditExtension_FXS&#39;)"><i
                                                 class="fas fa-times" style="color:#bd1717"></i><span>No</span>
                                         </div>
                                     </div>
@@ -5471,7 +5204,7 @@
                             <div class="" style="height: 160px!important;">
                                 <div class="title-content-1">
                                     <span>Delete VoIP Extension <span></span></span>
-                                    <button onclick="closeTable('Delete_EditExtension_VoIP')"><i
+                                    <button onclick="closeTable(&#39;Delete_EditExtension_VoIP&#39;)"><i
                                             class="fas fa-times"></i></button>
                                 </div>
 
@@ -5485,7 +5218,7 @@
                                         <div id="Delete_VoIP_Btn" class="Btn11" onclick=""><i class="fas fa-check"
                                                 style="color:green"></i><span>Yes</span>
                                         </div>
-                                        <div class="Btn22" onclick="CancelTable('Delete_EditExtension_VoIP')"><i
+                                        <div class="Btn22" onclick="CancelTable(&#39;Delete_EditExtension_VoIP&#39;)"><i
                                                 class="fas fa-times" style="color:#bd1717"></i><span>No</span>
                                         </div>
                                     </div>
@@ -5498,10 +5231,12 @@
                 </div><!--            // tab add Trunk voip-->
                 <div class="row tab_content_FXS_VoIP" id="AddVoIPTrunk" style="background: none">
                     <div class="form-content" style="position:relative">
-                        <div onmouseout="pos('AddVoIPTrunk_table')" id="AddVoIPTrunk_table" class="form-addVoIP_range">
+                        <div onmouseout="pos(&#39;AddVoIPTrunk_table&#39;)" id="AddVoIPTrunk_table"
+                            class="form-addVoIP_range">
                             <div class="title-content-1">
                                 <span>Add VoIP Trunk <span></span></span>
-                                <button onclick="closeTable('AddVoIPTrunk')"><i class="fas fa-times"></i></button>
+                                <button onclick="closeTable(&#39;AddVoIPTrunk&#39;)"><i
+                                        class="fas fa-times"></i></button>
                             </div>
 
                             <div class="form2" style="">
@@ -5605,7 +5340,7 @@
                                 <div id="SaveTrunkVoIP_Btn" class="Btn11" onclick="Save_AddTrunk_VoIP()"><i
                                         class="fas fa-check" style="color:green"></i><span>Save</span>
                                 </div>
-                                <div class="Btn22" onclick="CancelTable('AddVoIPTrunk')"><i class="fas fa-times"
+                                <div class="Btn22" onclick="CancelTable(&#39;AddVoIPTrunk&#39;)"><i class="fas fa-times"
                                         style="color:#bd1717"></i><span>Cancel</span>
                                 </div>
                             </div>
@@ -5964,125 +5699,6 @@
                     </div>
                 </div>
 
-                <div class="row tab_content_FXS_VoIP" id="SNMP_CONFIG">
-                    <div class="form-content">
-                     
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="block1">
-                                        <table id="snmp_table1">
-                                            <tbody>
-                                                <tr>
-                                                    <td>Name</td>
-                                                    <td><input id="snmp_name" type="text"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Location</td>
-                                                    <td><input id="snmp_location" type="text"></td>
-                                                </tr>
-                                                 <tr>
-                                                    <td>Contact</td>
-                                                    <td><input id="snmp_contact" type="text"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>System Description</td>
-                                                    <td><input id="snmp_sysDescription" type="text"></td>
-                                                </tr>
-                                                 <tr>
-                                                    <td>SNMP Port Number</td>
-                                                    <td><input id="snmp_portNumber" type="number"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>SNMP v1 Mode</td>
-                                                    <td>
-                                                        <select name="SNMP_v1_Mode" id="SNMP_v1_Mode">
-                                                            <option value="Enable">Enable</option>
-                                                            <option value="Disable">Disable</option>
-                                                        </select>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>SNMP v2c Mode</td>
-                                                    <td>
-                                                        <select name="SNMP_v2c_Mode" id="SNMP_v2c_Mode">
-                                                            <option value="Enable">Enable</option>
-                                                            <option value="Disable">Disable</option>
-                                                        </select>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>SNMP v3 Mode</td>
-                                                    <td>
-                                                        <select name="SNMP_v3_Mode" id="SNMP_v3_Mode">
-                                                            <option value="Enable">Enable</option>
-                                                            <option value="Disable">Disable</option>
-                                                        </select>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>    
-                                </div>
-                                  <div class="col-6">
-                                    <div class="block2">
-                                        <table id="snmp_table2">
-                                            <tbody>
-                                                <tr>
-                                                    <td>RO community</td>
-                                                    <td><input id="snmp_roCommunity" type="text"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>RW community</td>
-                                                    <td><input id="snmp_rwCommunity" type="text"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Trap Community</td>
-                                                    <td><input id="snmp_trapCommunity" type="text"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Server IP</td>
-                                                    <td><input id="snmp_serverIp" type="text"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding-top: 20px!important;">SNMPv3 Authentication</td>
-                                                    <td style="padding-top: 20px!important;">
-                                                        <select name="SNMPv3_Authentication" id="SNMPv3_Authentication">
-                                                            <option value="MD5">MD5</option>
-                                                            <option value="SHA">SHA</option>
-                                                            <option value="AES">AES</option>
-                                                            <option value="DES">DES</option>
-                                                        </select>
-                                                    </td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                                <div class="row saveAndCancelBtn">
-                                    <div class="saveAndCancelBtn">
-                                
-                                        <div class="saveBtn" onclick="snmp_save()">
-                                            <div class="child1"><img src="./PBX_files/img tick-green.png"></div>
-                                            <div class="child2"><span>Save</span></div>
-                                        </div>
-                                        <div class="cancelBtn" onclick="">
-                                            <div class="child1"><img src="./PBX_files/img close-red.png"></div>
-                                            <div class="child2"><span>Cancel</span></div>
-                                        </div>
-                                
-                                    </div>
-                                </div>
-                           
-
-                        </div>
-                        
-                    </div>
-                </div>
-
                 <div class="row tab_content_FXS_VoIP" id="newBackUp" style="background: none;">
                     <div class="form-content" style="position:relative">
                         <div onmouseout="pos('newBackUp_table');" id="newBackUp_table" class="form-addVoIP_range">
@@ -6220,1467 +5836,12 @@
                         </div>
                     </div>
                     <div class="infoDetails">
-                        <span>Liên hệ đơn vị sản xuất: Phòng Nghiên cứu Cộng nghệ Viễn Thông, Trung tâm KTTT CNC, Binh
+                        <span>Liên hệ đơn vị sản xuất: Phòng Nghiên cứu Công nghệ Viễn Thông, Trung tâm KTTT CNC, Binh
                             chủng TTLL</span><br>
                         <span>Địa chỉ: Số 9, Quan Nhân, Nhân Chính, Thanh Xuân, Hà Nội</span><br>
                         <span>Điện thoại: 522373</span>
                     </div>
 
-                </div>
-                <!-- tab radio  RADIO_ID -->
-                <!-- <div class="row tab_content_FXS_VoIP" id="RADIO_ID">
-                    <div class="form-content radio_id">
-                        <div class="container_RADIO_ID" id="container_RADIO_ID"
-                            style="width: 96%;margin-left: 2%!important">
-                            <div class="row">
-                                <div class="col-lg-12">
-
-                                    <div class="row">
-                                        <div class="form-group col-3" style="padding:15px!important">
-                                            <label for="sipaccount1">Sip Account 0:</label>
-                                            <input type="checkbox" onchange="onchange_func(this)"
-                                                name="sipaccountenable0" id="sipaccountenable0">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control"
-                                                name="sipaccount0" id="sipaccount0"
-                                                value="sip:996895@192.168.1.86:5060">
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">CallerID</b>
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">Password</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control"
-                                                name="user0" id="user0" value="996895">
-                                            <div class="input-group" id="show_hide_password">
-                                                <input id="password-field0" type="password"
-                                                    oninput="sip_conf_change(this)" class="form-control" name="pass0"
-                                                    value="Pin996895">
-                                                <div id="input-group-addon" class="input-group-addon">
-                                                    <a><i class="fa fa-eye-slash" aria-hidden="true"
-                                                            onclick="show_pass(this)"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">Transport</b>
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">Port</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <select oninput="sip_conf_change(this)" class="form-control" name="tran0">
-                                                <option value="UDP">UPD</option>
-                                                <option value="TCP">TCP</option>
-                                                <option value="TLS">TLS</option>
-                                            </select>
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control"
-                                                name="port0" id="port0" value="5060">
-                                        </div>
-
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="form-group col-3">
-                                            <label for="sipaccount1">Sip Account 1:</label>
-                                            <input type="checkbox" onchange="onchange_func(this)"
-                                                name="sipaccountenable1" id="sipaccountenable1">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control"
-                                                name="sipaccount1" id="sipaccount1"
-                                                value="sip:996891@192.168.1.86:5060">
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">CallerID</b>
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">Password</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control"
-                                                name="user1" id="user1" value="996891">
-                                            <div class="input-group" id="show_hide_password">
-                                                <input id="password-field1" type="password"
-                                                    oninput="sip_conf_change(this)" class="form-control" name="pass1"
-                                                    value="Pin996891">
-                                                <div class="input-group-addon">
-                                                    <a><i class="fa fa-eye-slash" aria-hidden="true"
-                                                            onclick="show_pass(this)"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">Transport</b>
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">Port</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <select oninput="sip_conf_change(this)" class="form-control" name="tran1">
-                                                <option value="UDP">UPD</option>
-                                                <option value="TCP">TCP</option>
-                                                <option value="TLS">TLS</option>
-                                            </select>
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control"
-                                                name="port1" id="port1" value="5060">
-                                        </div>
-
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="form-group col-3">
-                                            <label for="sipaccount1">Sip Account 2:</label>
-                                            <input type="checkbox" onchange="onchange_func(this)"
-                                                name="sipaccountenable2" id="sipaccountenable2">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control"
-                                                name="sipaccount2" id="sipaccount2" value="sip:958250@86.6.8.254:5060">
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">CallerID</b>
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">Password</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control"
-                                                name="user2" id="user2" value="95825">
-                                            <div class="input-group" id="show_hide_password">
-                                                <input id="password-field2" type="password"
-                                                    oninput="sip_conf_change(this)" class="form-control" name="pass2"
-                                                    value="95825">
-                                                <div class="input-group-addon">
-                                                    <a><i class="fa fa-eye-slash" aria-hidden="true"
-                                                            onclick="show_pass(this)"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">Transport</b>
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">Port</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <select oninput="sip_conf_change(this)" class="form-control" name="tran2">
-                                                <option value="UDP">UPD</option>
-                                                <option value="TCP">TCP</option>
-                                                <option value="TLS">TLS</option>
-                                            </select>
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control"
-                                                name="port2" id="port2" value="506">
-                                        </div>
-
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="form-group col-3">
-                                            <label for="sipaccount1">Sip Account 3:</label>
-                                            <input type="checkbox" onchange="onchange_func(this)"
-                                                name="sipaccountenable3" id="sipaccountenable3">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control"
-                                                name="sipaccount3" id="sipaccount3" value="sip:958250@86.5.8.254:5060">
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">CallerID</b>
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">Password</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control"
-                                                name="user3" id="user3" value="95825">
-                                            <div class="input-group" id="show_hide_password">
-                                                <input id="password-field3" type="password"
-                                                    oninput="sip_conf_change(this)" class="form-control" name="pass3"
-                                                    value="95825">
-                                                <div class="input-group-addon">
-                                                    <a><i class="fa fa-eye-slash" aria-hidden="true"
-                                                            onclick="show_pass(this)"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group col-1">
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">Transport</b>
-                                            <b class="form-control form-control-plaintext"
-                                                style="border-color:#efefef">Port</b>
-                                        </div>
-                                        <div class="form-group col-2">
-                                            <select oninput="sip_conf_change(this)" class="form-control" name="tran3">
-                                                <option value="UDP">UPD</option>
-                                                <option value="TCP">TCP</option>
-                                                <option value="TLS">TLS</option>
-                                            </select>
-                                            <input type="text" oninput="sip_conf_change(this)" class="form-control"
-                                                name="port3" id="port3" value="506">
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="background-run">
-                                            <button type="button" id="button_Submit">
-                                                Submit
-                                            </button>
-                                        </div>
-                                        <div class="background-run">
-                                            <button type="button" id="button_SubmitAll">
-                                                Submit All
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div> -->
-                <!-- tab radio  PORT-1-CONFIG -->
-                <div class="row tab_content_FXS_VoIP" id="PORT_1_CONFIG">
-                    <div class="form-content radio_general">
-                        <div class="container_RADIO_GENERAL" id="container_RADIO_GENERAL" style="width: 96%;margin-left: 2%!important">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="block">
-                                        <div class="title">
-                                            <p>AUDIO AGAIN</p>
-                                        </div>
-
-                                        <div class="content">
-                                            <div style="width: 80%;">
-                                                <div class="content-item">
-                                                    <p>RX GAIN: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)"
-                                                        class="form-control" name="rx-audio-gain" id="rx-audio-gain_0">
-                                                </div>
-                                                <div class="content-item">
-                                                    <p>TX GAIN: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)"
-                                                        class="form-control" name="tx-audio-gain" id="tx-audio-gain_0">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="block">
-                                        <div class="title">
-                                            <p>DELAY TIME</p>
-                                        </div>
-
-                                        <div class="content">
-                                            <div style="width: 80%;">
-                                                <div class="content-item">
-                                                    <p>RX DELAY: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)"
-                                                        class="form-control" name="rx-delay-time" id="rx-delay-time_0">
-                                                </div>
-                                                <div class="content-item">
-                                                    <p>TX DELAY: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)"
-                                                        class="form-control" name="tx-delay-time" id="tx-delay-time_0">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="block">
-                                        <div class="title">
-                                            <p>OPTIONS</p>
-                                        </div>
-
-                                        <div class="content">
-                                            <div style="width: 100%;">
-                                                <div class="content-item">
-                                                    <p>MUTE WITHOUT COR: </p>
-                                                    <select oninput="sip_conf_change(this)" class="form-control"
-                                                        name="radio_general-options-cor0" id="radio_general-options-cor0_0">
-                                                        <option value="Yes">Yes</option>
-                                                        <option value="No">No</option>
-                                                    </select>
-                                                </div>
-                                                <div class="content-item">
-                                                    <p>COR/PTT PRIORITY: </p>
-                                                    <select oninput="sip_conf_change(this)" class="form-control"
-                                                        name="radio_general-options-cor1" id="radio_general-options-cor1_0">
-                                                        <option value="COR">COR</option>
-                                                        <option value="PTT">PTT</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="block block-big">
-                                        <div class="title">
-                                            <p>VOICE DETECT</p>
-                                        </div>
-
-                                        <div class="content">
-                                            <div style="width: 100%;">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Algorithm</p>
-                                                            </div>
-
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <select oninput="sip_conf_change(this)"
-                                                                            class="form-control"
-                                                                            name="radio_general-voice-detect-al0" id="radio_general-voice-detect-al0_0">
-                                                                            <option value="VOX(0)">VOX(0)</option>
-                                                                            <option value="VMR(1)">VMR(1)</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <select oninput="sip_conf_change(this)"
-                                                                            class="form-control"
-                                                                            name="radio_general-voice-detect-al1" id="radio_general-voice-detect-al1_0">
-                                                                            <option value="VOX(0)">VOX(0)</option>
-                                                                            <option value="VMR(1)">VMR(1)</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Start voice detect time</p>
-                                                            </div>
-
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <input type="number"
-                                                                            oninput="sip_conf_change(this)"
-                                                                            class="form-control"
-                                                                            name="rx-start-voice-detect-time"
-                                                                            id="rx-start-voice-detect-time_0">
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <input type="number"
-                                                                            oninput="sip_conf_change(this)"
-                                                                            class="form-control"
-                                                                            name="tx-start-voice-detect-time"
-                                                                            id="tx-start-voice-detect-time_0">
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Stop voice detect time</p>
-                                                            </div>
-
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <input type="number"
-                                                                            oninput="sip_conf_change(this)"
-                                                                            class="form-control"
-                                                                            name="rx-stop-voice-detect-time"
-                                                                            id="rx-stop-voice-detect-time_0">
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <input type="number"
-                                                                            oninput="sip_conf_change(this)"
-                                                                            class="form-control"
-                                                                            name="tx-stop-voice-detect-time"
-                                                                            id="tx-stop-voice-detect-time_0">
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Voice detect threshold</p>
-                                                            </div>
-
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <input type="number"
-                                                                            oninput="sip_conf_change(this)"
-                                                                            class="form-control"
-                                                                            name="rx-threshold-voice-detect-time"
-                                                                            id="rx-threshold-voice-detect-time_0">
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <input type="number"
-                                                                            oninput="sip_conf_change(this)"
-                                                                            class="form-control"
-                                                                            name="tx-threshold-voice-detect-time"
-                                                                            id="tx-threshold-voice-detect-time_0">
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="block block-big">
-                                        <div class="title">
-                                            <p>VOICE SIGNAL PROCESSOR</p>
-                                        </div>
-
-                                        <div class="content">
-                                            <div style="width: 80%;">
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <div class="content-item">
-                                                            <p>NOISE FILTER FOR: </p>
-                                                            <!-- <input id="" type="number"> -->
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>COR TRANSMIT: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="cor-trasnmit" id="cor-trasnmit_0">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>AUTO PTT: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="auto-ptt" id="auto-ptt_0">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>IMPROVE THE QUALITY <br> OR RX VOICE: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="improve-the-quality-rx" id="improve-the-quality-rx_0">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>IMPROVE THE QUALITY <br> OR TX VOICE: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="improve-the-quality-tx" id="improve-the-quality-tx_0">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row saveAndCancelBtn">
-                                <div class="saveAndCancelBtn">
-
-                                    <div class="saveBtn" onclick="radio_port_save(this)" id="radio_port_1">
-                                        <div class="child1"><img src="./PBX_files/img tick-green.png"></div>
-                                        <div class="child2"><span>Save </span></div>
-                                    </div>
-                                    <div class="cancelBtn" onclick="">
-                                        <div class="child1"><img src="./PBX_files/img close-red.png"></div>
-                                        <div class="child2"><span>Cancel</span></div>
-                                    </div>
-                                    <div class="cancelBtn" onclick="radio_port_reset(this)" id="radio_port_1">
-                                        <div class="child1"><img src="./PBX_files/img close-red.png"></div>
-                                        <div class="child2"><span>Reset</span></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row tab_content_FXS_VoIP" id="PORT_2_CONFIG">
-                    <div class="form-content radio_general">
-                        <div class="container_RADIO_GENERAL" id="container_RADIO_GENERAL" style="width: 96%;margin-left: 2%!important">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="block">
-                                        <div class="title">
-                                            <p>AUDIO AGAIN</p>
-                                        </div>
-                
-                                        <div class="content">
-                                            <div style="width: 80%;">
-                                                <div class="content-item">
-                                                    <p>RX GAIN: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)" class="form-control"
-                                                        name="rx-audio-gain" id="rx-audio-gain_1">
-                                                </div>
-                                                <div class="content-item">
-                                                    <p>TX GAIN: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)" class="form-control"
-                                                        name="tx-audio-gain" id="tx-audio-gain_1">
-                                                </div>
-                                            </div>
-                
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="block">
-                                        <div class="title">
-                                            <p>DELAY TIME</p>
-                                        </div>
-                
-                                        <div class="content">
-                                            <div style="width: 80%;">
-                                                <div class="content-item">
-                                                    <p>RX DELAY: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)" class="form-control"
-                                                        name="rx-delay-time" id="rx-delay-time_1">
-                                                </div>
-                                                <div class="content-item">
-                                                    <p>TX DELAY: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)" class="form-control"
-                                                        name="tx-delay-time" id="tx-delay-time_1">
-                                                </div>
-                                            </div>
-                
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="block">
-                                        <div class="title">
-                                            <p>OPTIONS</p>
-                                        </div>
-                
-                                        <div class="content">
-                                            <div style="width: 100%;">
-                                                <div class="content-item">
-                                                    <p>MUTE WITHOUT COR: </p>
-                                                    <select oninput="sip_conf_change(this)" class="form-control"
-                                                        name="radio_general-options-cor0" id="radio_general-options-cor0_1">
-                                                        <option value="Yes">Yes</option>
-                                                        <option value="No">No</option>
-                                                    </select>
-                                                </div>
-                                                <div class="content-item">
-                                                    <p>COR/PTT PRIORITY: </p>
-                                                    <select oninput="sip_conf_change(this)" class="form-control"
-                                                        name="radio_general-options-cor1" id="radio_general-options-cor1_1">
-                                                        <option value="COR">COR</option>
-                                                        <option value="PTT">PTT</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="block block-big">
-                                        <div class="title">
-                                            <p>VOICE DETECT</p>
-                                        </div>
-                
-                                        <div class="content">
-                                            <div style="width: 100%;">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Algorithm</p>
-                                                            </div>
-                
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <select oninput="sip_conf_change(this)" class="form-control"
-                                                                            name="radio_general-voice-detect-al0" id="radio_general-voice-detect-al0_1">
-                                                                            <option value="VOX(0)">VOX(0)</option>
-                                                                            <option value="VMR(1)">VMR(1)</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <select oninput="sip_conf_change(this)" class="form-control"
-                                                                            name="radio_general-voice-detect-al1" id="radio_general-voice-detect-al1_1">
-                                                                            <option value="VOX(0)">VOX(0)</option>
-                                                                            <option value="VMR(1)">VMR(1)</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Start voice detect time</p>
-                                                            </div>
-                
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="rx-start-voice-detect-time"
-                                                                            id="rx-start-voice-detect-time_1">
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="tx-start-voice-detect-time"
-                                                                            id="tx-start-voice-detect-time_1">
-                                                                    </div>
-                                                                </div>
-                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Stop voice detect time</p>
-                                                            </div>
-                
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="rx-stop-voice-detect-time"
-                                                                            id="rx-stop-voice-detect-time_1">
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="tx-stop-voice-detect-time"
-                                                                            id="tx-stop-voice-detect-time_1">
-                                                                    </div>
-                                                                </div>
-                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Voice detect threshold</p>
-                                                            </div>
-                
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="rx-threshold-voice-detect-time"
-                                                                            id="rx-threshold-voice-detect-time_1">
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="tx-threshold-voice-detect-time"
-                                                                            id="tx-threshold-voice-detect-time_1">
-                                                                    </div>
-                                                                </div>
-                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                
-                                            </div>
-                
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="block block-big">
-                                        <div class="title">
-                                            <p>VOICE SIGNAL PROCESSOR</p>
-                                        </div>
-                
-                                        <div class="content">
-                                            <div style="width: 80%;">
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <div class="content-item">
-                                                            <p>NOISE FILTER FOR: </p>
-                                                            <!-- <input id="" type="number"> -->
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>COR TRANSMIT: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="cor-trasnmit" id="cor-trasnmit_1">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>AUTO PTT: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="auto-ptt"  id="auto-ptt_1">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>IMPROVE THE QUALITY <br> OR RX VOICE: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="improve-the-quality-rx" id="improve-the-quality-rx_1">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>IMPROVE THE QUALITY <br> OR TX VOICE: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="improve-the-quality-tx" id="improve-the-quality-tx_1">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                
-                                                    </div>
-                
-                                                </div>
-                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="row saveAndCancelBtn">
-                                <div class="saveAndCancelBtn">
-                
-                                    <div class="saveBtn" onclick="radio_port_save(this)" id="radio_port_2">
-                                        <div class="child1"><img src="./PBX_files/img tick-green.png"></div>
-                                        <div class="child2"><span>Save</span></div>
-                                    </div>
-                                    <div class="cancelBtn" onclick="">
-                                        <div class="child1"><img src="./PBX_files/img close-red.png"></div>
-                                        <div class="child2"><span>Cancel</span></div>
-                                    </div>
-                                    <div class="cancelBtn" onclick="radio_port_reset(this)" id="radio_port_2">
-                                        <div class="child1"><img src="./PBX_files/img close-red.png"></div>
-                                        <div class="child2"><span>Reset</span></div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row tab_content_FXS_VoIP" id="PORT_3_CONFIG">
-                    <div class="form-content radio_general">
-                        <div class="container_RADIO_GENERAL" id="container_RADIO_GENERAL" style="width: 96%;margin-left: 2%!important">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="block">
-                                        <div class="title">
-                                            <p>AUDIO AGAIN</p>
-                                        </div>
-                
-                                        <div class="content">
-                                            <div style="width: 80%;">
-                                                <div class="content-item">
-                                                    <p>RX GAIN: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)" class="form-control"
-                                                        name="rx-audio-gain" id="rx-audio-gain_2">
-                                                </div>
-                                                <div class="content-item">
-                                                    <p>TX GAIN: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)" class="form-control"
-                                                        name="tx-audio-gain" id="tx-audio-gain_2">
-                                                </div>
-                                            </div>
-                
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="block">
-                                        <div class="title">
-                                            <p>DELAY TIME</p>
-                                        </div>
-                
-                                        <div class="content">
-                                            <div style="width: 80%;">
-                                                <div class="content-item">
-                                                    <p>RX DELAY: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)" class="form-control"
-                                                        name="rx-delay-time" id="rx-delay-time_2">
-                                                </div>
-                                                <div class="content-item">
-                                                    <p>TX DELAY: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)" class="form-control"
-                                                        name="tx-delay-time" id="tx-delay-time_2">
-                                                </div>
-                                            </div>
-                
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="block">
-                                        <div class="title">
-                                            <p>OPTIONS</p>
-                                        </div>
-                
-                                        <div class="content">
-                                            <div style="width: 100%;">
-                                                <div class="content-item">
-                                                    <p>MUTE WITHOUT COR: </p>
-                                                    <select oninput="sip_conf_change(this)" class="form-control"
-                                                        name="radio_general-options-cor0" id="radio_general-options-cor0_2">
-                                                        <option value="Yes">Yes</option>
-                                                        <option value="No">No</option>
-                                                    </select>
-                                                </div>
-                                                <div class="content-item">
-                                                    <p>COR/PTT PRIORITY: </p>
-                                                    <select oninput="sip_conf_change(this)" class="form-control"
-                                                        name="radio_general-options-cor1" id="radio_general-options-cor1_2">
-                                                        <option value="COR">COR</option>
-                                                        <option value="PTT">PTT</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="block block-big">
-                                        <div class="title">
-                                            <p>VOICE DETECT</p>
-                                        </div>
-                
-                                        <div class="content">
-                                            <div style="width: 100%;">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Algorithm</p>
-                                                            </div>
-                
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <select oninput="sip_conf_change(this)" class="form-control"
-                                                                            name="radio_general-voice-detect-al0" id="radio_general-voice-detect-al0_2">
-                                                                            <option value="VOX(0)">VOX(0)</option>
-                                                                            <option value="VMR(1)">VMR(1)</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <select oninput="sip_conf_change(this)" class="form-control"
-                                                                            name="radio_general-voice-detect-al1" id="radio_general-voice-detect-al1_2">
-                                                                            <option value="VOX(0)">VOX(0)</option>
-                                                                            <option value="VMR(1)">VMR(1)</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Start voice detect time</p>
-                                                            </div>
-                
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="rx-start-voice-detect-time"
-                                                                            id="rx-start-voice-detect-time_2">
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="tx-start-voice-detect-time"
-                                                                            id="tx-start-voice-detect-time_2">
-                                                                    </div>
-                                                                </div>
-                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Stop voice detect time</p>
-                                                            </div>
-                
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="rx-stop-voice-detect-time"
-                                                                            id="rx-stop-voice-detect-time_2">
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="tx-stop-voice-detect-time"
-                                                                            id="tx-stop-voice-detect-time_2">
-                                                                    </div>
-                                                                </div>
-                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Voice detect threshold</p>
-                                                            </div>
-                
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="rx-threshold-voice-detect-time"
-                                                                            id="rx-threshold-voice-detect-time_2">
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="tx-threshold-voice-detect-time"
-                                                                            id="tx-threshold-voice-detect-time_2">
-                                                                    </div>
-                                                                </div>
-                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                
-                                            </div>
-                
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="block block-big">
-                                        <div class="title">
-                                            <p>VOICE SIGNAL PROCESSOR</p>
-                                        </div>
-                
-                                        <div class="content">
-                                            <div style="width: 80%;">
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <div class="content-item">
-                                                            <p>NOISE FILTER FOR: </p>
-                                                            <!-- <input id="" type="number"> -->
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>COR TRANSMIT: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="cor-trasnmit" id="cor-trasnmit_2">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>AUTO PTT: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="auto-ptt" id="auto-ptt_2">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>IMPROVE THE QUALITY <br> OR RX VOICE: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="improve-the-quality-rx" id="improve-the-quality-rx_2">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>IMPROVE THE QUALITY <br> OR TX VOICE: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="improve-the-quality-tx" id="improve-the-quality-tx_2">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                
-                                                    </div>
-                
-                                                </div>
-                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="row saveAndCancelBtn">
-                                <div class="saveAndCancelBtn">
-                
-                                    <div class="saveBtn" onclick="radio_port_save(this)" id="radio_port_3">
-                                        <div class="child1"><img src="./PBX_files/img tick-green.png"></div>
-                                        <div class="child2"><span>Save</span></div>
-                                    </div>
-                                    <div class="cancelBtn" onclick="">
-                                        <div class="child1"><img src="./PBX_files/img close-red.png"></div>
-                                        <div class="child2"><span>Cancel</span></div>
-                                    </div>
-                                    <div class="cancelBtn" onclick="radio_port_reset(this)" id="radio_port_3">
-                                        <div class="child1"><img src="./PBX_files/img close-red.png"></div>
-                                        <div class="child2"><span>Reset</span></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row tab_content_FXS_VoIP" id="PORT_4_CONFIG">
-                    <div class="form-content radio_general">
-                        <div class="container_RADIO_GENERAL" id="container_RADIO_GENERAL" style="width: 96%;margin-left: 2%!important">  
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="block">
-                                        <div class="title">
-                                            <p>AUDIO AGAIN</p>
-                                        </div>
-                
-                                        <div class="content">
-                                            <div style="width: 80%;">
-                                                <div class="content-item">
-                                                    <p>RX GAIN: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)" class="form-control"
-                                                        name="rx-audio-gain" id="rx-audio-gain_3">
-                                                </div>
-                                                <div class="content-item">
-                                                    <p>TX GAIN: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)" class="form-control"
-                                                        name="tx-audio-gain" id="tx-audio-gain_3">
-                                                </div>
-                                            </div>
-                
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="block">
-                                        <div class="title">
-                                            <p>DELAY TIME</p>
-                                        </div>
-                
-                                        <div class="content">
-                                            <div style="width: 80%;">
-                                                <div class="content-item">
-                                                    <p>RX DELAY: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)" class="form-control"
-                                                        name="rx-delay-time" id="rx-delay-time_3">
-                                                </div>
-                                                <div class="content-item">
-                                                    <p>TX DELAY: </p>
-                                                    <input type="number" oninput="sip_conf_change(this)" class="form-control"
-                                                        name="tx-delay-time" id="tx-delay-time_3">
-                                                </div>
-                                            </div>
-                
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="block">
-                                        <div class="title">
-                                            <p>OPTIONS</p>
-                                        </div>
-                
-                                        <div class="content">
-                                            <div style="width: 100%;">
-                                                <div class="content-item">
-                                                    <p>MUTE WITHOUT COR: </p>
-                                                    <select oninput="sip_conf_change(this)" class="form-control"
-                                                        name="radio_general-options-cor0" id="radio_general-options-cor0_3">
-                                                        <option value="Yes">Yes</option>
-                                                        <option value="No">No</option>
-                                                    </select>
-                                                </div>
-                                                <div class="content-item">
-                                                    <p>COR/PTT PRIORITY: </p>
-                                                    <select oninput="sip_conf_change(this)" class="form-control"
-                                                        name="radio_general-options-cor1" id="radio_general-options-cor1_3">
-                                                        <option value="COR">COR</option>
-                                                        <option value="PTT">PTT</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="block block-big">
-                                        <div class="title">
-                                            <p>VOICE DETECT</p>
-                                        </div>
-                
-                                        <div class="content">
-                                            <div style="width: 100%;">
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Algorithm</p>
-                                                            </div>
-                
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <select oninput="sip_conf_change(this)" class="form-control"
-                                                                            name="radio_general-voice-detect-al0" id="radio_general-voice-detect-al0_3">
-                                                                            <option value="VOX(0)">VOX(0)</option>
-                                                                            <option value="VMR(1)">VMR(1)</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <select oninput="sip_conf_change(this)" class="form-control"
-                                                                            name="radio_general-voice-detect-al1" id="radio_general-voice-detect-al1_3">
-                                                                            <option value="VOX(0)">VOX(0)</option>
-                                                                            <option value="VMR(1)">VMR(1)</option>
-                                                                        </select>
-                                                                    </div>
-                                                                </div>
-                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Start voice detect time</p>
-                                                            </div>
-                
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="rx-start-voice-detect-time"
-                                                                            id="rx-start-voice-detect-time_3">
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="tx-start-voice-detect-time"
-                                                                            id="tx-start-voice-detect-time_3">
-                                                                    </div>
-                                                                </div>
-                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Stop voice detect time</p>
-                                                            </div>
-                
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="rx-stop-voice-detect-time"
-                                                                            id="rx-stop-voice-detect-time_3">
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="tx-stop-voice-detect-time"
-                                                                            id="tx-stop-voice-detect-time_3">
-                                                                    </div>
-                                                                </div>
-                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="block">
-                                                            <div class="title-small">
-                                                                <p>Voice detect threshold</p>
-                                                            </div>
-                
-                                                            <div class="content">
-                                                                <div style="width: 85%;">
-                                                                    <div class="content-item">
-                                                                        <p>RX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="rx-threshold-voice-detect-time"
-                                                                            id="rx-threshold-voice-detect-time_3">
-                                                                    </div>
-                                                                    <div class="content-item">
-                                                                        <p>TX: </p>
-                                                                        <input type="number" oninput="sip_conf_change(this)"
-                                                                            class="form-control" name="tx-threshold-voice-detect-time"
-                                                                            id="tx-threshold-voice-detect-time_3">
-                                                                    </div>
-                                                                </div>
-                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                
-                                            </div>
-                
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="block block-big">
-                                        <div class="title">
-                                            <p>VOICE SIGNAL PROCESSOR</p>
-                                        </div>
-                
-                                        <div class="content">
-                                            <div style="width: 80%;">
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <div class="content-item">
-                                                            <p>NOISE FILTER FOR: </p>
-                                                            <!-- <input id="" type="number"> -->
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>COR TRANSMIT: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="cor-trasnmit" id="cor-trasnmit_3">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>AUTO PTT: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="auto-ptt" id="auto-ptt_3">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>IMPROVE THE QUALITY <br> OR RX VOICE: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="improve-the-quality-rx" id="improve-the-quality-rx_3">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="content-item">
-                                                            <p>IMPROVE THE QUALITY <br> OR TX VOICE: </p>
-                                                            <select oninput="sip_conf_change(this)" class="form-control"
-                                                                name="improve-the-quality-tx" id="improve-the-quality-tx_3">
-                                                                <option value="Yes">Yes</option>
-                                                                <option value="No">No</option>
-                                                            </select>
-                                                        </div>
-                
-                                                    </div>
-                
-                                                </div>
-                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="row saveAndCancelBtn">
-                                <div class="saveAndCancelBtn">
-                
-                                    <div class="saveBtn" onclick="radio_port_save(this)" id="radio_port_4">
-                                        <div class="child1"><img src="./PBX_files/img tick-green.png"></div>
-                                        <div class="child2"><span>Save</span></div>
-                                    </div>
-                                    <div class="cancelBtn" onclick="">
-                                        <div class="child1"><img src="./PBX_files/img close-red.png"></div>
-                                        <div class="child2"><span>Cancel</span></div>
-                                    </div>
-                                        <div class="cancelBtn" onclick="radio_port_reset(this)" id="radio_port_4">
-                                        <div class="child1"><img src="./PBX_files/img close-red.png"></div>
-                                        <div class="child2"><span>Reset</span></div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- tab co trunk  CO CONFIGURE -->
-                <div class="row tab_content_FXS_VoIP" id="CO_CONFIGURE">
-                    <div class="form-content co-configure">
-                        <div class="container_CO_CONFIGURE" id="container_CO_CONFIGURE" style="width: 96%;margin-left: 2%!important">
-                        <div class="server-ip">
-                            <p>Server IP</p>
-                            <input type="text" name="" id="" value="192.168.4.0">
-                        </div>
-                            <div class="row row-table">
-                               
-                                <table id="co_trunk_table">
-                                    <thead>
-                                        <tr>
-                                            <th>CO TRUNK</th>
-                                            <th>CODE</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>
-                                                <input type="number" name="co-trunk-1" id="co-trunk-1">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>
-                                                <input type="number" name="co-trunk-2" id="co-trunk-2">
-                                            </td>
-                                        </tr>
-                                         <tr>
-                                            <td>3</td>
-                                            <td>
-                                                <input type="number" name="co-trunk-3" id="co-trunk-3">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>
-                                                <input type="number" name="co-trunk-4" id="co-trunk-4">
-                                            </td>
-                                        </tr>
-                                         <tr>
-                                            <td>5</td>
-                                            <td>
-                                                <input type="number" name="co-trunk-5" id="co-trunk-5">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>
-                                                <input type="number" name="co-trunk-6" id="co-trunk-6">
-                                            </td>
-                                        </tr>
-                                          <tr>
-                                            <td>7</td>
-                                            <td>
-                                                <input type="number" name="co-trunk-7" id="co-trunk-7">
-                                            </td>
-                                        </tr>
-                                          <tr>
-                                            <td>8</td>
-                                            <td>
-                                                <input type="number" name="co-trunk-8" id="co-trunk-8">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                   
-                                   
-                                </table>
-                            </div>
-                         
-                
-                            <div class="row saveAndCancelBtn">
-                                <div class="saveAndCancelBtn">
-                
-                                    <div class="saveBtn" onclick="co_trunk_save()">
-                                        <div class="child1"><img src="./PBX_files/img tick-green.png"></div>
-                                        <div class="child2"><span>Save</span></div>
-                                    </div>
-                                    <div class="cancelBtn" onclick="">
-                                        <div class="child1"><img src="./PBX_files/img close-red.png"></div>
-                                        <div class="child2"><span>Cancel</span></div>
-                                    </div>
-                
-                                </div>
-                            </div>
-                
-                        </div>
-                    </div>
-                </div>
-
-               
-                  <div class="row tab_content_FXS_VoIP" id="L2_SWITCH_CONFIGURE">
-                    <div class="form-content l2-switch-configure">
-                        <div class="container_L2_SWITCH_CONFIGURE" id="container_L2_SWITCH_CONFIGURE" style="width: 96%;margin-left: 2%!important">
-                          
-                        
-                    
-                
-                        </div>
-                    </div>
                 </div>
 
             </div>
